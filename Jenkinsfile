@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('gitclone'){
             steps{
-                https://github.com/MadarapuMounika/jenkins.git
+                sh 'https://github.com/MadarapuMounika/jenkins.git'
             }
           }
         stage('build'){
