@@ -1,0 +1,5 @@
+steps:
+  - name: "gcr.io/cloud-builders/git"
+    args: ["clone", "https://github.com/MadarapuMounika/jenkins.git", "--branch=feature"]
+  - name: "gcr.io/cloud-builders/jenkins"
+    args: ["jenkinsfile-runner", "-f", "Jenkinsfile", "-p", "my-param=value"]
